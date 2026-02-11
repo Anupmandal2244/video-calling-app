@@ -1,0 +1,98 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #eaf2ff;
+  background-color: #091018;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #183453, #0a1320 55%, #070b12);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.panel {
+  width: min(980px, 100%);
+  background: rgba(8, 13, 22, 0.8);
+  border: 1px solid rgba(160, 190, 255, 0.25);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 0.45rem;
+  color: #b2c7ed;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #081420;
+  background: #8bc4ff;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 1rem;
+  background: rgba(36, 74, 118, 0.3);
+  border: 1px solid rgba(118, 167, 226, 0.35);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.videos {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+article {
+  background: rgba(10, 21, 35, 0.75);
+  border: 1px solid rgba(131, 169, 215, 0.25);
+  border-radius: 14px;
+  padding: 0.75rem;
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: #c8dcff;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  background: #03070d;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
